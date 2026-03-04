@@ -45,6 +45,14 @@
             height: auto;
             margin: 10px auto;
           }
+
+          .profile-headshot {
+            width: 320px;
+            max-width: 100%;
+            height: 470px;
+            object-fit: cover;
+            object-position: center top;
+          }
         </style>
 
         <style>
@@ -79,17 +87,22 @@
               hyphens: auto;
             }
 
-            img,
+            img:not(.profile-headshot),
             iframe,
             video {
               max-width: 100% !important;
               height: auto !important;
             }
+
+            .profile-headshot {
+              width: 280px !important;
+              height: 410px !important;
+            }
           }
         </style>
 
         <p align="center">
-          <img src="assets/paige-rowberry-headshot.jpg" width="350" alt="Headshot of Paige Rowberry">
+          <img class="profile-headshot" src="assets/paige-rowberry-headshot.jpg" alt="Headshot of Paige Rowberry">
         </p>
 
         <p>
