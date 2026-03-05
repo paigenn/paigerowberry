@@ -28,12 +28,18 @@
 #5
 }
 
-\newcommand{\cvsection}[2][8]{%
+\newcommand{\cvsection}[2][12]{%
 \Needspace{#1\baselineskip}%
 \section*{#2}%
 }
 
-\newcommand{\paperstart}{\Needspace{6\baselineskip}}
+\newenvironment{paperentry}{%
+\Needspace{24\baselineskip}%
+\samepage
+}{%
+\vspace{0.6em}%
+\par
+}
 
 \begin{document}
 \pagestyle{plain}
@@ -51,41 +57,44 @@
 \eduentry{Brigham Young University}{Provo, Utah}{B.S. in Finance}{2021}
 
 \cvsection{Research Interests}
-\begin{itemize}[leftmargin=1.2em,itemsep=0.2em,topsep=0.2em]
-\item Economic Geography
-\end{itemize}
+Spatial Economics, Economic Geography, Market Structure
 
 \cvsection{Working Papers}
-\paperstart
+\begin{paperentry}
 \textbf{Valuing Agglomeration}\\
 Job Market Paper
 
 Abstract: When a firm moves its headquarters, does it benefit nearby companies through agglomeration economies, or does it hurt them by increasing competition? Stock prices give a clear verdict. I create a dataset of US companies that announce a headquarters move and study the impact on nearby companies in both previous and new locations. When a firm announces it will move its headquarters, companies in the same industry near the new location see their stock prices increase 1.7\%. Companies in the same industry near the headquarters' previous location see their stock prices decrease 2.4\%. High-tech relocations create larger effects: +2.2\% and -3.7\%, respectively. Effects dissipate beyond one mile, indicating that agglomeration economies in production are highly local.
+\end{paperentry}
 
-\paperstart
+\begin{paperentry}
 \textbf{Persistent Spillovers from Temporary Pandemic Restrictions}\\
 with Andra Ghent and Matthew Spiegel\\
 \emph{Revise and Resubmit, Journal of Financial Economics}
 
 Abstract: Pandemic restrictions targeted non-essential businesses that required in-person contact to operate. We document the impact of these restrictions county-by-county on directly regulated businesses and on businesses not subject to restrictions. Through 2023, a one standard deviation increase in restrictions increased business closures by 3\% and reduced net job creation by 18\%. These adverse effects extended beyond regulated firms to those exempt from regulations. We attribute this transmission at least in part to the loss of face-to-face interactions.
+\end{paperentry}
 
-\paperstart
+\begin{paperentry}
 \textbf{Does Market Fragmentation Improve Price Efficiency?}\\
 with Jonathan Brogaard and Anne Haubo Dyhrberg
 
 Abstract: Chen and Duffie (2021) argue that market fragmentation can improve price efficiency by enabling traders to split their orders across venues, reducing their overall price impact, making their trading more aggressive. Testing this theory in equity markets is difficult due to regulatory requirements that distort market independence. The cryptocurrency marketplace provides an ideal setting given its lack of regulatory interference. Taking advantage of sudden and unexpected changes in coin listings, we use a difference-in-difference identification strategy to show that fragmentation improves price efficiency, consistent with Chen and Duffie (2021). The implications for the role of fragmentation are essential for improving market quality and investor welfare.
+\end{paperentry}
 
-\paperstart
+\begin{paperentry}
 \textbf{CEO-to-Median Worker Pay Ratio and Employee Movements}\\
 with Amy Cyr, Mark Lang, Sara Malik, and Jim Omartian
+\end{paperentry}
 
 \cvsection{Peer Reviewed Publications}
-\paperstart
+\begin{paperentry}
 \textbf{New Evidence on the Cycle in the Women, Infants, and Children Program: What Happens When Benefits Expire}\\
 with Marianne Bitler, Jason Cook, Seojung Oh, and Paige Rowberry\\
 \emph{Published, National Tax Journal, 2024}
 
 Abstract: We provide evidence of a benefit redemption cycle in the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC). Using novel administrative data on item-level redemptions, we show that unlike SNAP, WIC redemptions peak at both the beginning and the end of the month. Beginning-of-the-month excess redemptions are concentrated among more fully redeemed items such as infant formula, while end-of-the-month excess redemptions are concentrated among less fully redeemed items such as infant meats. We document that a substantial share of beneficiaries go at least one month without redeeming anything and discuss how administrative burdens may drive the WIC cycle.
+\end{paperentry}
 
 \cvsection{Awards and Honors}
 \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
